@@ -1,0 +1,166 @@
+body
+{
+counter-reset: definition;
+counter-reset: remark;
+counter-reset: exampl;
+}
+
+
+.exampl {
+    counter-increment: exampl;
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: AntiqueWhite;
+    border-left: 6px solid;
+    border-color: BurlyWood;
+    padding:10px 10px 10px 20px;
+}
+.exampl:before {
+    content: "Example " counter(exampl) ". ";
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.proposition {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: Lavender;
+    border-left: 6px solid;
+    border-color: DarkGrey;
+    padding:10px 10px 10px 20px;
+}
+.proposition:before {
+    content: "Proposition " attr(btit) ". ";
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+}
+.proposition:after {
+    content: "#REF:    "  attr(blab);
+    text-align: right;
+    float:right;
+    font-style: italic;
+    background-color:   #ecdfec;
+    color: Tomato;
+    border-right: 6px solid;
+    border-color:    #b181b1;
+    padding: 5px 15px 5px 15px;
+}
+
+.remark {
+    counter-increment: remark;
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color:  #cefdce;
+    border-left: 6px solid;
+    border-color: DarkGreen;
+    padding:10px 10px 10px 20px
+}
+.remark:before {
+    content: "Remark " counter(remark) ".";
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+}
+.remark:after {
+    content: "#REF:    "  attr(blab);
+    text-align: right;
+    float:right;
+    font-style: italic;
+    background-color:   #ecdfec;
+    color: Tomato;
+    border-right: 6px solid;
+    border-color:    #b181b1;
+    padding: 5px 15px 5px 15px;
+}
+
+.theorem {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: LemonChiffon;
+    border-left: 6px solid;
+    border-color: Tomato;
+    padding:10px 10px 10px 20px;
+}
+.theorem:before {
+    content: "Theorem "  attr(btit) ". ";
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.theorem:after {
+    content: "#REF:    "  attr(blab);
+    text-align: right;
+    float:right;
+    font-style: italic;
+    background-color:   #ecdfec;
+    color: Tomato;
+    border-right: 6px solid;
+    border-color:    #b181b1;
+    padding: 5px 15px 5px 15px;
+}
+
+.lemma {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: Lavender;
+    border-left: 6px solid;
+    border-color: DarkGrey;
+    padding:10px 10px 10px 20px;
+}
+.lemma:before {
+    content: "Lemma " attr(btit) ". ";
+    font-weight: bold;
+    font-style: normal;
+}
+.lemma:after {
+    content: "#REF:    "  attr(blab);
+    text-align: right;
+    float:right;
+    font-style: italic;
+    background-color:   #ecdfec;
+    color: Tomato;
+    border-right: 6px solid;
+    border-color:    #b181b1;
+    padding: 5px 15px 5px 15px;
+}
+.proof {
+    display: block;
+    margin: 12px 0 0 30px;
+    font-style: normal;
+    padding:10px 10px 10px 30px;
+    border-left: 6px solid;
+    border-color: DarkGrey;
+}
+.proof:before {
+    content: "Proof.";
+    font-style: italic;
+}
+.proof:after {
+    content: "\25FC";
+    float:right;
+}
+
+.definition {
+    counter-increment: definition;
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+    background-color: LightCyan;
+    border-left: 6px solid;
+    border-color: DarkCyan;
+    padding:10px 10px 10px 20px;
+}
+.definition:before {
+    content: "Definition " counter(definition) ".";
+    font-weight: bold;
+    font-style: normal;
+}
+
