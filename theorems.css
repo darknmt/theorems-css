@@ -39,7 +39,7 @@ counter-reset: exampl;
     text-decoration: underline;
 }
 .proposition:after {
-    content: "#REF:    "  attr(blab);
+    content: "#REF:    "  attr(id);
     text-align: right;
     float:right;
     font-style: italic;
@@ -67,7 +67,7 @@ counter-reset: exampl;
     text-decoration: underline;
 }
 .remark:after {
-    content: "#REF:    "  attr(blab);
+    content: "#REF:    "  attr(id);
     text-align: right;
     float:right;
     font-style: italic;
@@ -95,7 +95,7 @@ counter-reset: exampl;
 }
 
 .theorem:after {
-    content: "#REF:    "  attr(blab);
+    content: "#REF:    "  attr(id);
     text-align: right;
     float:right;
     font-style: italic;
@@ -121,7 +121,7 @@ counter-reset: exampl;
     font-style: normal;
 }
 .lemma:after {
-    content: "#REF:    "  attr(blab);
+    content: "#REF:    "  attr(id);
     text-align: right;
     float:right;
     font-style: italic;
