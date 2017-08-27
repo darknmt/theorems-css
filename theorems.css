@@ -1,15 +1,26 @@
 body
 {
-counter-reset: definition;
-counter-reset: remark;
-counter-reset: exampl;
+}
+.info {
+    display: block;
+    margin: 50px 70px 50px 70px;
+    font-size: 85%;
+    background-color:   #fce8e8;
+    border-left: 5px solid;
+    border-color:  #f4a4a4;
+    padding:10px 10px 5px 20px;
 }
 
+.info:before {
+    display: none;
+    content: "Infomation. ";
+    font-weight: bold;
+    font-style: normal;
+}
 
 .exampl {
-    counter-increment: exampl;
     display: block;
-    margin: 12px 0;
+    margin: 20px 0 40px 0;
     font-style: italic;
     background-color: AntiqueWhite;
     border-left: 6px solid;
@@ -17,7 +28,7 @@ counter-reset: exampl;
     padding:10px 10px 10px 20px;
 }
 .exampl:before {
-    content: "Example " counter(exampl) ". ";
+    content: "Example. ";
     font-weight: bold;
     font-style: normal;
     text-decoration: underline;
@@ -25,7 +36,7 @@ counter-reset: exampl;
 
 .proposition {
     display: block;
-    margin: 12px 0;
+    margin: 20px 0 40px 0;
     font-style: italic;
     background-color: Lavender;
     border-left: 6px solid;
@@ -51,9 +62,8 @@ counter-reset: exampl;
 }
 
 .remark {
-    counter-increment: remark;
     display: block;
-    margin: 12px 0;
+    margin: 20px 0 40px 0;
     font-style: italic;
     background-color:  #cefdce;
     border-left: 6px solid;
@@ -61,7 +71,7 @@ counter-reset: exampl;
     padding:10px 10px 10px 20px
 }
 .remark:before {
-    content: "Remark " counter(remark) ".";
+    content: "Remark.";
     font-weight: bold;
     font-style: normal;
     text-decoration: underline;
@@ -80,7 +90,7 @@ counter-reset: exampl;
 
 .theorem {
     display: block;
-    margin: 12px 0;
+    margin: 20px 0 40px 0;
     font-style: italic;
     background-color: LemonChiffon;
     border-left: 6px solid;
@@ -108,7 +118,7 @@ counter-reset: exampl;
 
 .lemma {
     display: block;
-    margin: 12px 0;
+    margin: 20px 0 40px 0;
     font-style: italic;
     background-color: Lavender;
     border-left: 6px solid;
@@ -133,7 +143,7 @@ counter-reset: exampl;
 }
 .proof {
     display: block;
-    margin: 12px 0 0 30px;
+    margin: 20px 0 0 30px;
     font-style: normal;
     padding:10px 10px 10px 30px;
     border-left: 6px solid;
@@ -149,17 +159,16 @@ counter-reset: exampl;
 }
 
 .definition {
-    counter-increment: definition;
     display: block;
-    margin: 12px 0;
+    margin: 20px 0 40px 0;
     font-style: normal;
     background-color: LightCyan;
     border-left: 6px solid;
     border-color: DarkCyan;
-    padding:10px 10px 10px 20px;
+    padding:10px 20px 10px 20px;
 }
 .definition:before {
-    content: "Definition " counter(definition) ".";
+    content: "Definition.";
     font-weight: bold;
     font-style: normal;
 }

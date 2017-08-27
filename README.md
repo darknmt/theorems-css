@@ -9,7 +9,7 @@ Emacs [org-publish](http://orgmode.org/manual/Publishing.html) export theorems (
 <div class="theorem"> </div>
 ```
 
-The snippet in `/snippets/` add theorem title (attribute `btit`) and label (attribute `bid`) which also play the role of `id` attribute, e.g.
+The snippet in `/snippets/` add theorem title (attribute `btit`) and label (attribute `bid`) which also plays the role of `id` attribute, e.g.
 ```html
 <div btit="(Homotopy/Prism operator)" blab="thm:prism-operator" class="theorem">
 ```
