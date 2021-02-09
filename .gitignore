@@ -194,4 +194,4 @@ TSWLatexianTemp*
 *~[0-9]*
 
 # Private
-.private.org
+*.private.org
